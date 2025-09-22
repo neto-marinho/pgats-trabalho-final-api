@@ -101,14 +101,8 @@ A API possui uma suíte completa de testes automatizados implementada com **Moch
 test/
 ├── controllers/          # Testes dos controladores
 │   ├── userController.test.js
-│   └── transferController.test.js
-├── services/            # Testes dos serviços
-│   ├── userService.test.js
-│   └── transferService.test.js
-├── integration/         # Testes de integração
-│   └── api.test.js
-├── helpers/             # Funções auxiliares para testes
-│   └── testHelpers.js
+│   └── userControllerSinon.test.js
+|   └── transferController.test.js
 └── setup.js            # Configuração global dos testes
 ```
 
