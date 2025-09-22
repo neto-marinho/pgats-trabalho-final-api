@@ -30,15 +30,15 @@ jobs:
     - name: Generate coverage report
       run: npx nyc report --reporter=html
       
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v3
-      with:
-        file: ./coverage/lcov.info
-        fail_ci_if_error: true
+    # - name: Upload coverage to Codecov
+    #   uses: codecov/codecov-action@v3
+    #   with:
+    #     file: ./coverage/lcov.info
+    #     fail_ci_if_error: true
         
-    - name: Comment PR with coverage
-      uses: romeovs/lcov-reporter-action@v0.3.1
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        lcov-file: ./coverage/lcov.info
-        delete-old-comments: true
+    # - name: Comment PR with coverage
+    #   uses: romeovs/lcov-reporter-action@v0.3.1
+    #   with:
+    #     github-token: ${{ secrets.GITHUB_TOKEN }}
+    #     lcov-file: ./coverage/lcov.info
+    #     delete-old-comments: true
